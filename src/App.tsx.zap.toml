@@ -1,0 +1,63 @@
+name = "App.tsx"
+behavior = """
+The provided React component, named `App`, is a simple application for tracking visits to national parks. Below is a detailed summary of its behavior and features:
+
+### Initial Setup
+
+- The component uses the `useState` hook to manage three states:
+  - `visitedParks`: An array of park IDs representing parks that have been visited.
+  - `searchTerm`: A string for the search functionality.
+  - `viewMode`: A string that toggles between 'grid' and 'list' to change the view mode.
+
+### Data
+
+- It uses a hard-coded array `nationalParks` as sample data, containing details of various national parks (like `id`, `name`, `state`, `image`).
+
+### Interactivity
+
+1. **Toggle Visited Status:**
+   - Clicking a park will toggle its visited status.
+   - This is handled by the `toggleVisited` function, which updates the `visitedParks` state by adding or removing the park's ID.
+
+2. **Search Functionality:**
+   - A search input filters parks based on the `name` or `state`.
+   - Parks are filtered using the `filteredParks` array.
+
+3. **View Mode Switching:**
+   - Two buttons allow toggling between 'list' and 'grid' views for park display.
+   - This is stored in the `viewMode` state.
+
+### Layout and Styling
+
+- **Header:**
+  - Displays the app title and a count of visited parks.
+  - Includes buttons to switch the view mode.
+
+- **Main Content Area:**
+  - **Search Bar:** An input field for users to enter search terms.
+  - **List View (Sidebar):** Always visible, it lists visited and not visited parks separately, showing the count in each category. This list is sorted alphabetically.
+  - **Grid/List View (Main Content):** 
+    - If `viewMode` is 'grid', parks are displayed in a card format with images.
+    - If `viewMode` is 'list', parks are displayed in a more traditional list format with park details.
+  - **Empty State:** If no parks match the search criteria, an empty state message is displayed.
+
+### Visual Indicators
+
+- **Visited Parks:**
+  - In both list and grid views, visited parks display a green checkmark.
+  - A button toggles the park's visited status, with styling changes to reflect the state.
+
+### Responsiveness
+
+- The component leverages CSS classes for styling and media queries to create a responsive design, ensuring an optimal viewing experience on different devices.
+
+### Icons
+
+- Utilizes icons from the `lucide-react` library to visually enhance the user interface, including the `MapPin` and `CheckCircle` icons.
+
+### Other Considerations
+
+- Image components use the `unsplash` URL for visual representation of each park.
+- The use of utility-first CSS classes via a library (likely Tailwind CSS) is apparent, enhancing the overall design aesthetics and flexible spacing/layout.
+
+Overall, the `App` component is a straightforward, interactive React application that allows users to manage and visually explore their visits to various national parks, offering filter and view customization functionalities."""
