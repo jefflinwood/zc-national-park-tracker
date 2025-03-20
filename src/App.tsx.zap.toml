@@ -61,3 +61,4 @@ The provided React component, named `App`, is a simple application for tracking 
 - The use of utility-first CSS classes via a library (likely Tailwind CSS) is apparent, enhancing the overall design aesthetics and flexible spacing/layout.
 
 Overall, the `App` component is a straightforward, interactive React application that allows users to manage and visually explore their visits to various national parks, offering filter and view customization functionalities."""
+
